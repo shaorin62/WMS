@@ -28,7 +28,6 @@ public class MainController {
     public ModelAndView main(@ModelAttribute MainVO mainVO) {
         ModelAndView mav = new ModelAndView("/main/main");
 
-
         try{
             System.out.println("여기는 일단 지나가게 되어있음");
 
