@@ -19,3 +19,14 @@
 <c:set var="js" value="${ctx }/resources/js" />
 
 <script type="text/javascript" src="${js }/jquery-3.3.1.min.js"></script>
+
+<%--TOAST UI Grid--%>
+<script src="${ctx }/resources/node_modules/jquery/dist/jquery.js"></script>
+<script src="${ctx }/resources/node_modules/underscore/underscore.js"></script>
+<script src="${ctx }/resources/node_modules/backbone/backbone.js"></script>
+<script src="${ctx }/resources/node_modules/tui-code-snippet/dist/tui-code-snippet.js"></script>
+<script src="${ctx }/resources/node_modules/tui-pagination/dist/tui-pagination.js"></script>
+<script src="${ctx }/resources/node_modules/tui-date-picker/dist/tui-date-picker.js"></script>
+<script src="${ctx }/resources/node_modules/tui-grid/dist/tui-grid.js"></script>
+<script src="${ctx }/resources/node_modules/tui-grid/examples/data/basic-dummy.js"></script>
+

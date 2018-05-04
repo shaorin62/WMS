@@ -42,4 +42,19 @@ public class MainController {
 
         return mav;
     }
+
+    @RequestMapping(value = "/main/table.do", method = {RequestMethod.GET, RequestMethod.POST} )
+    public ModelAndView tableview1(@ModelAttribute MainVO mainVO) {
+        ModelAndView mav = new ModelAndView("/main/bootstraptable");
+
+        try{
+            System.out.println("여기는 일단 지나가게 되어있음");
+
+
+        }catch (Exception e){
+            logger.error("{}", e);
+        }
+
+        return mav;
+    }
 }
