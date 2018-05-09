@@ -2,6 +2,7 @@ package com.jnf.wms.main.service.impl;
 
 import com.jnf.wms.main.service.MainService;
 import com.jnf.wms.main.service.MainVO;
+import com.jnf.wms.main.service.TableVO;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -15,6 +16,10 @@ public class MainImpl implements MainService {
 
     public List<MainVO> selectMainList(MainVO mainVO) throws Exception{
         return mainDAO.selectMainList(mainVO);
+    }
+
+    public List<TableVO> selectTableList(TableVO tableVO) throws Exception{
+        return mainDAO.selectTableList(tableVO);
     }
 
 }

@@ -23,23 +23,11 @@
 
 <div class="content-wrapper">
     <h1>시작을 위한 메인 페이지.</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, tempore veniam nemo voluptates neque dolore voluptate sint dicta, dolorem magni, doloremque! Libero quaerat illo, voluptate ab eum magnam temporibus eius.</p>
-    <p>Nihil repellat minus, doloribus sequi recusandae omnis eaque obcaecati placeat eius ut quidem, nobis nulla unde voluptatem vero itaque voluptas harum in dignissimos. Itaque quos consequuntur alias, aperiam similique fugiat.</p>
-    <p>Laborum enim quibusdam possimus quod repudiandae ipsa fugiat ullam deserunt pariatur ea voluptatibus ex adipisci rerum voluptas, quisquam consequuntur neque reiciendis minus voluptatem cum dolorum, nesciunt! Corporis velit, accusantium ullam!</p>
-    <p>Laboriosam eos fuga et quis vitae modi eaque ratione velit sit? Error, quam repellendus inventore aliquid, maxime beatae, amet temporibus corporis et officiis eligendi praesentium placeat vitae. Reprehenderit, velit, quae?</p>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur inventore eveniet soluta impedit, voluptatibus, dicta est iste sed nihil quisquam, vel accusamus, molestias ullam! Modi ullam deserunt aperiam quidem et.</div>
-    <div>Repudiandae, illum. Dolore, iusto similique ipsum ab explicabo, quas eos dignissimos iste eveniet et sint. Modi odit molestiae accusamus magni cumque ipsum, accusantium architecto cum minus, veniam eveniet laboriosam perspiciatis?</div>
-    <div>Cum, a corporis nemo natus cupiditate explicabo quod tempora illum dolor id repudiandae ratione molestiae sint ducimus illo quidem quasi obcaecati minima at necessitatibus consequatur. Soluta harum, eveniet quia enim.</div>
-    <div>Officiis tenetur culpa provident pariatur blanditiis sed id possimus cumque repellat et animi architecto, fugiat hic non consequuntur, magni maiores eos vitae molestias, qui ratione modi deleniti. Veniam, consequatur, quia!</div>
-    <div>Aliquid illo praesentium temporibus voluptatem inventore repellat at minima vero ratione amet. Hic, eum odit maxime placeat quae reprehenderit soluta ex dolorum sapiente, quam harum, porro iste quos ea? Ex.</div>
-    <div>Dolores suscipit reprehenderit, minus magni consequuntur a provident nobis, culpa voluptatem quae voluptatum, alias illo? Enim optio nulla magnam! Distinctio, cum ut enim fugit ipsam ullam dignissimos, natus harum itaque.</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quae velit, facilis reiciendis magnam dolores pariatur saepe non tempora distinctio possimus iste porro necessitatibus quia, dolore maxime officiis harum natus.</p>
-    <p>Impedit nulla facere eius, est voluptatem reiciendis, eveniet mollitia sit alias officia earum quas assumenda? Magni debitis, doloribus, nobis officia enim dolor harum, a libero aspernatur nulla eaque, consequuntur ducimus.</p>
-    <p>Incidunt impedit deserunt, veniam et perferendis. Quaerat voluptate blanditiis voluptatum sit labore aspernatur, totam possimus dignissimos et! Sed provident doloribus impedit accusamus cum placeat velit incidunt unde, numquam harum expedita.</p>
-    <p>Enim odio minima eos tempore rerum, repellat, non recusandae. Dignissimos officiis ad est, libero cupiditate quam quaerat ipsum dolore, possimus ex, repudiandae deserunt molestiae fuga inventore omnis voluptates ut voluptas.</p>
-    <p>Inventore aperiam quod optio, ducimus consequatur voluptate. Nulla cumque, voluptate eveniet rerum, accusantium velit explicabo ut aut provident. Alias ipsa temporibus magnam at nemo commodi a nam quia quisquam earum.</p>
-    <p>Vitae temporibus impedit nam quaerat, ea ab enim eaque corporis eos architecto veniam dolore maiores nobis voluptatum obcaecati suscipit perferendis quas blanditiis culpa animi aliquid! Temporibus similique nesciunt ducimus nulla.</p>
-    <p>Rem harum perspiciatis non blanditiis doloribus excepturi suscipit consequuntur labore sequi quas iste facere est deleniti natus mollitia quidem placeat soluta, earum ipsam corrupti voluptatibus temporibus fugit. Ipsa, neque quaerat.</p>
+    <p>각종 테스트 페이지 및 모듈 실험을 위한 페이지 입니다. </p>
+    <p>앞으로 여러가지 서비스나 모듈을 적용해 볼 생각입니다 . </p>
+    <p>이 페이지가 업무 및 각종 웹 개발시 도움이 되도록 업데이트 하도록 하겠습니다.</p>
+    <div>자 그럼 왼쪽 위에 작은 상자로 각종 모듈을 시작해 봅시다.</div>
+
 </div>
 
 <!--   MENU STRUCTURE-->
@@ -56,8 +44,8 @@
         <ul class="side-menu--list">
             <li>
                 <a class="subset">Company</a>
-                <a href=""> Mission</a>
-                <a href="">People</a>
+                <a href="${ctx}/main/table.do"> Toast Grid</a>
+                <a href="${ctx}/tournament/tournamentview.do">Tournament</a>
                 <a href="">Social Responsibility</a>
             </li>
             <li>

@@ -11,6 +11,7 @@
     <typeAliases>
         <!-- 기본 메인 -->
         <typeAlias alias="mainVO" type="com.jnf.wms.main.service.MainVO" />
+        <typeAlias alias="tableVO" type="com.jnf.wms.main.service.TableVO" />
     </typeAliases>
 
     <mappers>

@@ -15,5 +15,21 @@
 		 ]]>
 	</select>
 
+	<select id="selectTableList" parameterType="tableVO" resultType="tableVO">
+		<![CDATA[
+
+
+		  	SELECT
+			tb_name
+			, tb_date
+			, ISNULL(TB_AMT,0) tb_amt
+			, ISNULL(TB_FLAG,'N') tb_flag
+			FROM AA_TABLE
+			WHERE 1=1
+
+
+		 ]]>
+	</select>
+
 
 </mapper>
