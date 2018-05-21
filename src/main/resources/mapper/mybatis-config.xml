@@ -11,12 +11,15 @@
     <typeAliases>
         <!-- 기본 메인 -->
         <typeAlias alias="mainVO" type="com.jnf.wms.main.service.MainVO" />
-        <typeAlias alias="tableVO" type="com.jnf.wms.main.service.TableVO" />
+        <typeAlias alias="tableVO" type="com.jnf.wms.toastgrid.service.TableVO" />
     </typeAliases>
 
     <mappers>
         <!-- 기본메인 -->
         <mapper resource="mapper/main/Main_SQL.xml" />
+        <!-- Toast Grid -->
+        <mapper resource="mapper/toastgrid/Toastgrid.xml" />
+
     </mappers>
 
 </configuration>

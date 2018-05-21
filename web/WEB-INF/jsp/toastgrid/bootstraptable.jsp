@@ -12,6 +12,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="${ctx }/resources/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="${ctx }/resources/css/common.css" type="text/css" />
     <!--TOSTA-->
     <link rel="stylesheet" type="text/css" href="${ctx }/resources/node_modules/tui-grid/dist/tui-grid.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/nhnent/tui.time-picker/v1.0.0/dist/tui-time-picker.css" />
@@ -19,36 +21,6 @@
 
 </head>
 <body>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/1.6.2/jquery.mockjax.min.js"></script>
-<script type="text/javascript" src="${ctx }/resources/node_modules/tui-grid/examples/data/basic-dummy.js"></script>
-<script type="text/javascript">
-
-    $.mockjax({
-        url: 'api/readData',
-        responseTime: 0,
-        response: function(settings) {
-            var page = settings.data.page;
-            var perPage = settings.data.perPage;
-            var start = (page - 1) * perPage;
-            var end = start + perPage;
-            var data = gridData.slice(start, end);
-
-            this.responseText = JSON.stringify({
-                result: true,
-                data: {
-                    contents: data,
-                    pagination: {
-                        page: page,
-                        totalCount: 20
-                    }
-                }
-            });
-        }
-    });
-
-</script>
-
-
 
 <script type="text/javascript" class="code-js">
     var grid ;          //그리드 변수
@@ -67,7 +39,7 @@
     function Search(){
         $.ajax({
             type : "post",
-            url : "${ctx}/main/gridSearch.do",
+            url : "${ctx}/toastgrid/gridSearch.do",
             data : {},
             success : function(data){
 
@@ -196,39 +168,33 @@
             alert(55);
         });
 
-        var net;
-
-        net = grid.getAddOn('Net');
-
-        // Request create
-        net.request('createData');
-
-        // Request update
-        net.request('updateData');
-
-        // Request delete
-        net.request('deleteData');
-
-        // Request create/update/delete at once
-        net.request('modifyData');
-
     }
 
-
+    //그리드 테마옵션 선택
     tui.Grid.applyTheme('striped');
-
-
 
 </script>
 
+<div class="wrap">
+    <div class="top_box"> <%@ include file="/WEB-INF/jsp/coms/layout/pageTop.jsp" %></div>
+    <div class="content">
+        <form id="data_form" method="post">
+            <div>
+
+                <div id="grid" style="width: 50%"></div>
+
+            </div>
+        </form>
+
+
+    </div>
+
+
+
+
+</div>
+
+
 
 </body>
-
-<form id="data_form" method="post">
-
-    <div id="grid"></div>
-</form>
-
-
-
 </html>

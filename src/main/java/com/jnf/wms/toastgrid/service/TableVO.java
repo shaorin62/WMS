@@ -1,4 +1,4 @@
-package com.jnf.wms.main.service;
+package com.jnf.wms.toastgrid.service;
 
 public class TableVO {
 

@@ -15,13 +15,4 @@ public interface MainService {
      */
     public List<MainVO> selectMainList(MainVO mainVO) throws Exception;
 
-
-    /**
-     * @Description 데이터베이스 데이터 조회
-     * @param tableVO
-     * @return List
-     * @throws Exception
-     */
-    public List<TableVO> selectTableList(TableVO tableVO) throws Exception;
-
 }

@@ -18,7 +18,9 @@
 <c:set var="img" value="${ctx }/resources/img" />
 <c:set var="js" value="${ctx }/resources/js" />
 
+<%--JS--%>
 <script type="text/javascript" src="${js }/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="${js }/common.js"></script>
 
 <%--TOAST UI Grid--%>
 <script src="${ctx }/resources/node_modules/jquery/dist/jquery.js"></script>

@@ -69,7 +69,7 @@
 
 
     $('.demo').bracket({
-        init: singleElimination
+        init: doubleElimination
     });
 
 
